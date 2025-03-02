@@ -1,7 +1,7 @@
 import { PreRegisterForm } from "@/components";
 import MainBannerImage from "@/components/common/MainBanner";
 import ResponsiveImage from "@/components/common/ResponsiveImage";
-import SweaterImage from "@/components/common/sweater";
+import SweaterImage from "@/components/common/Sweater";
 import StepImage from "@/components/common/Stepbanner";
 
 
