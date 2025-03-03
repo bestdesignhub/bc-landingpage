@@ -225,9 +225,9 @@ font-style: normal;
 }
 
 /* Mobile portrait view */
-@media (max-width: 767px) and (orientation: portrait) {
-  .portrait {
-    display: block; /* Show portrait image */
+@media (max-width: 1200px) {
+  body {
+    background: red;
   }
 }
 
