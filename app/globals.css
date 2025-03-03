@@ -43,7 +43,7 @@ font-style: normal;
 
 @media (max-width: 640px) {
   .main-title, .main-title span {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 .style-section {
@@ -229,9 +229,9 @@ font-style: normal;
     text-transform: uppercase;
   }
 
-  @media (max-width:960px) {
+  @media (max-width:640px) {
     .style-title {
-      font-size: 18px;
+      font-size: 25px;
     }
   }
 
@@ -245,7 +245,7 @@ font-style: normal;
 
   
   .style-title.bnr {
-    font-size: 35px;
+    font-size: 55px;
     text-align: left;
     font-weight: 400;
     text-transform: uppercase;
@@ -258,8 +258,8 @@ font-style: normal;
 
   @media (max-width:1200px) {
   .style-title.bnr { 
-    font-size: 22px;
-    top: 30%;
+    font-size: 32px;
+    top: 40%;
     background: #e8e8e873;
     padding: 10px;
   } 

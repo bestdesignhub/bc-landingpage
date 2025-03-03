@@ -7,7 +7,7 @@ const MainBannerImage = () => {
 
       <div className="  container containe-bnr">
       <h2 className=" style-title bnr">Design Your <br/>
-      Perfect Cashmere Sweater Online</h2>
+      Perfect Cashmere <br/> Sweater Online</h2>
       </div>
       <img
       className="w-full"
