@@ -7,6 +7,7 @@ import StepImage from "@/components/common/Stepbanner";
 
 
 import { getCountryList, getGenderList } from "@/utils/server-api";
+import Everyneed from "@/components/common/occasion";
 
 export const dynamic = "force-dynamic";
 
@@ -15,8 +16,6 @@ export default async function Home() {
   const genders = await getGenderList();
   return (
     <div className="relative h-screen">
-      {/* Mobile Background */}
-      {/* <ResponsiveImage />*/}
       <div className="header">
         <div className="container">
           <div className="flex">
@@ -27,15 +26,10 @@ export default async function Home() {
           </div>      
           </div>
           </div>
-
         </div>
         </div>
       <div className="mainBanner">
         <MainBannerImage /> 
-        <img className="arrow"
-          src="/arrow.png"
-          alt="Online Sweater"
-        />
       </div>
       <div className="signup-form">
         <div className="flex justify-center">
@@ -46,8 +40,7 @@ export default async function Home() {
               <span>Sign up and Win </span>prizes worth <strong>$5.000</strong>
             </h2>
             <p className="subtext text-sm text-black text-center mb-3">
-            Celebrate the launch of our exclusive cashmere sweater brand! <span className="font-bold uppercase">BESPOKE CASHMERES</span> coming soon.
-            You now have a chance to win $5,000 worth of premium cashmere sweaters over the next 2 months. <strong>Create</strong> your unique cashmere sweater for both man or women.
+              You're now officially part of our exciting competition, giving you the chance to win exclusive cashmere sweaters worth <strong>$6,000</strong> over the next two months!  For every <strong>200 sign-ups</strong>, we’ll draw one lucky winner who will receive a custom-designed cashmere sweater, tailored for either men or women.
             </p>
             <div className="signup-form-container">
 
@@ -56,9 +49,9 @@ export default async function Home() {
           </div>
           <div className="style-section">
             <h2 className="style-title">
-              Our sweater Styles
+            OUR SWEATER COLLECTION
             </h2>
-            <p>We have a multiple style sweater and plan and cable patern We have a multiple style sweater and plan and cable paternWe have a multiple style sweater and plan and cable patern We have a multiple style sweater and plan and cable patern</p>
+            <p>Part of our sweater collection</p>
             <SweaterImage />
           </div>
           </div>
@@ -67,7 +60,18 @@ export default async function Home() {
       </div>
       <div className="step-section">
             <StepImage />
-          </div>
+            <Everyneed />
+      </div>
+      <div className="thanks-message">
+      <h4>Thank You for Signing Up!</h4>
+      <p>Our technical team is working on our new website, where you'll soon be able to create your perfect online sweater.</p>
+      <h5>Stay tuned for updates!</h5>
+      <p>More details contact us : Email: <strong>contact@bespokecashmere.eu</strong>  •  Phone: <strong>+45 3132 7890 </strong></p>
+      </div>
+      <p className="copyright">
+        @copyright 2025 Bespoke Cashmere. All Rights Reserved.
+      </p>
+
     </div>
   );
 }
