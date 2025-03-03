@@ -1,3 +1,5 @@
+ 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,20 +24,39 @@ font-style: normal;
 .main-title {
   text-align: left;
   font-size: 40px;
-  line-height: 55px;
+  line-height: 1.5;
   font-weight: 500;
   text-transform: uppercase;
   padding:0 20px
 }
 
+
+
 .main-title span {
   font-size: 40px;
 }
+@media (max-width: 960px) {
+  .main-title, .main-title span {
+    font-size: 35px;
+  }
+}
 
+@media (max-width: 640px) {
+  .main-title, .main-title span {
+    font-size: 20px;
+  }
+}
 .style-section {
   width: 58%;
   text-align: center;
   padding: 60px 80px 0;
+}
+
+@media (max-width: 960px) {
+  .style-section {
+    width: 100%;
+    padding: 60px 10px 10px;
+  }
 }
 
 .style-section p {
@@ -73,6 +94,8 @@ font-style: normal;
 .container {
   max-width: 1300px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header { padding: 30px 0;}
@@ -83,12 +106,28 @@ font-style: normal;
   float: left;
 }
 
-.contact-details {
-    width: 419px;
-    float: right;
-    padding: 20px 0;
-  }
+@media (max-width: 640px) {
+  .full-width-div {
+  display: flex;
+  flex-direction: column;
+}
+  
+}
 
+.contact-details {
+    /* width: 419px; */
+    float: right;
+    padding: 10px 0;
+    display: flex
+    ;
+        flex-wrap: wrap;
+        gap: 4px 20px;
+  }
+  @media (max-width: 640px) {
+    .contact-details {
+      flex-direction: column;;
+    }
+  }
   .mainBanner {
     position: relative;
   }
@@ -114,6 +153,15 @@ font-style: normal;
     -moz-border-radius: 25px;
   }
 
+  @media (max-width: 960px) {
+    .signupform {
+      max-width:100%;
+      margin-top: -40px;
+    }
+  }
+..signup-form {
+  padding-bottom: 70px;
+}
   .signup-form-container {
     padding: 0 20px;
   }
@@ -153,7 +201,12 @@ font-style: normal;
     border-radius: 25px;
     margin: 35px 0;
   }
-
+  @media (max-width: 960px) {
+    .submitbtn {
+      padding: 5px 10px;
+      font-size: 20px;
+    }
+  }
   .submitbtn:hover {
     background: #000;
   }
@@ -163,6 +216,12 @@ font-style: normal;
     width: 100%;
   }
 
+  @media (max-width:960px) {
+    .form-container {
+      flex-direction: column;
+    }
+  }
+
   .style-title {
     font-size: 35px;
     text-align: center;
@@ -170,16 +229,82 @@ font-style: normal;
     text-transform: uppercase;
   }
 
+  @media (max-width:960px) {
+    .style-title {
+      font-size: 18px;
+    }
+  }
+
+  .containe-bnr {
+    display: flex;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background-color: #e8e8e873;
+  }
+
+  
+  .style-title.bnr {
+    font-size: 35px;
+    text-align: left;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: absolute;
+    position: absolute;
+    /* left: 0; */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width:1200px) {
+  .style-title.bnr { 
+    font-size: 22px;
+    top: 30%;
+    background: #e8e8e873;
+    padding: 10px;
+  } 
+  }
+  @media (max-width:768px) {
+    .style-title.bnr { 
+      font-size: 22px;
+      top: 30%;
+      background: transparent;
+      padding: 10px;
+      position: static;
+      height: auto;
+      transform: none;
+    } 
+    }
+
+    @media (max-width:648px) {
+      .style-title.bnr { 
+        font-size:15px;
+      }
+    }
+
   .step-section {
     width: 100%;
     float: left;
     margin-top: 80px;
   }
 
+  @media (max-width:768px) {
+    .step-section {
+      margin-top: 25px;
+    }
+  }
+
   .everything-step {
     width: 100%;
     padding: 100px 0;
     text-align: center;
+    background-color: white;
+  }
+
+  @media (max-width:768px) {
+    .everything-step {
+      padding:30px 0;
+    }
   }
 
   .everything-step img{
@@ -189,6 +314,10 @@ font-style: normal;
   .thanks-message {
     text-align: center;
     padding-bottom: 50px;
+    float: left;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .thanks-message h4 {
@@ -207,7 +336,12 @@ font-style: normal;
     font-size: 20px;
     line-height: 36px;
   }
-
+  @media (max-width:768px) {
+    .thanks-message p { 
+      font-size: 14px;
+      line-height: 1.2;
+    }
+  }
   .copyright {
     background: #f2f2f2;
     text-align: center;
@@ -227,7 +361,7 @@ font-style: normal;
 /* Mobile portrait view */
 @media (max-width: 1200px) {
   body {
-    background: red;
+    
   }
 }
 

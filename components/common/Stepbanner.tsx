@@ -5,6 +5,7 @@ const StepImage = () => {
     <div className="stepImg">
       {/* Landscape Image */}
       <img
+      className="w-full"
         src="/step-banner.jpg"
         alt="Easy 4 steps for create online sweater"
       />
