@@ -40,7 +40,7 @@ export default async function Home() {
                   <span>Sign up and Win </span>prizes worth <strong>$6.000</strong>
                 </h2>
                 <p className="subtext text-sm text-black text-center mb-3">
-                  You're now officially part of our exciting competition, giving you the chance to win exclusive cashmere sweaters worth <strong>$6,000</strong> over the next two months!  For every <strong>200 sign-ups</strong>, we’ll draw one lucky winner who will receive a custom-designed cashmere sweater, tailored for either men or women.
+                  You're now officially part of our exciting competition, giving you the chance to win exclusive cashmere sweaters worth <strong>$6,000</strong> over the next two months!  For every <strong>200 sign-ups</strong>, we will draw one lucky winner who will receive a custom-designed cashmere sweater, tailored for either men or women.
                 </p>
                 <div className="signup-form-container">
                   <PreRegisterForm countries={contries} genders={genders} />
