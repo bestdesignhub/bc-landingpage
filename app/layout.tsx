@@ -10,8 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Bespoke Cashmeres",
-  description: "Bespoke Cashmeres",
+  title: "Bespoke Cashmere",
+  description: "Bespoke Cashmere",
 };
 
 export default function RootLayout({

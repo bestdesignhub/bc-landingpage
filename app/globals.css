@@ -429,6 +429,7 @@ font-style: normal;
   @media (max-width:768px) {
     .style-title.bnr { 
       font-size: 22px;
+      padding-top: 35px;
       /* top: 30%; */
       /* background: transparent;
       padding: 10px;
@@ -437,8 +438,58 @@ font-style: normal;
       transform: none; */
     } 
 
+    .main-title, .subtext {
+      padding: 0;
+    }
+
+    .container {
+      padding: 0 10px;
+    }
+
     .contact-details {
-      font-size: 15px;
+      padding: 0;
+    }
+
+    .header {
+      padding: 30px 0 10px;
+    }
+
+    .signup-form-container {
+      padding: 0;
+    }
+
+    .submitbtn {
+      margin: 10px 0;
+    }
+
+    .all-sweater {
+      margin: 20px 0 10px;
+    }
+
+    .signup-form {
+      padding-bottom: 20px;
+    }
+
+    .profile-width {
+      width: 100%;
+      margin: 0 10px;
+    }
+
+    .thanks-message {
+      padding: 0 60px;
+    }
+
+    .signupform {
+      margin-top: 20px;
+    }
+
+    .contact-details {
+      font-size: 16px;
+      display: block;
+    }
+
+    .contact-details a {
+      margin-right: 5px;
     }
 
     .form-container {
@@ -552,6 +603,21 @@ font-style: normal;
 /* Mobile landscape view */
 @media (max-width: 767px) and (orientation: landscape) {
   .landscape {
+    display: block;
+  }
+}
+
+
+/* Desktop view (landscape orientation) */
+@media (min-width: 768px) and (orientation: landscape) {
+  .landscape {
     display: block; /* Show landscape image */
+  }
+}
+
+/* Mobile portrait view */
+@media (max-width: 767px) and (orientation: portrait) {
+  .portrait {
+    display: block; /* Show portrait image */
   }
 }
