@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Gilda+Display&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 .image-container {
   position: fixed;
@@ -48,11 +48,12 @@ font-style: normal;
 .main-title {
   text-align: left;
   font-size: 40px;
-  line-height: 1.5;
-  font-weight: 500;
+  line-height: 40px;
   text-transform: uppercase;
   padding:0 20px;
-  font-family: "Merriweather", serif;
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .main-title span {
@@ -314,17 +315,17 @@ font-style: normal;
   }
   
   .style-title.bnr {
-    font-size: 55px;
+    font-size: 64px;
     text-align: left;
     text-transform: uppercase;
-    line-height: 70px;
+    line-height: 64px;
     padding-top: 150px;
     position: absolute;
-    font-family: "Merriweather", serif;
+    font-family: "Gilda Display", serif;
     font-weight: 400;
     font-style: normal;
+    letter-spacing: -3.2px;
   }
-
 
   .profileSection {
     background: #f9fafd;
