@@ -6,7 +6,7 @@ const ResponsiveImage = () => {
       {/* Landscape Image */}
       <img
         src="/logo.png"
-        className="landscape"
+        className="landscaped"
         alt="Bespoke Cashmere"
       />
     </div>

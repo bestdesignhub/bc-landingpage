@@ -28,6 +28,7 @@ module.exports = {
         sm: ["0.875rem", { lineHeight: "1.5715" }],
         base: ["1rem", { lineHeight: "1.5", letterSpacing: "-0.01em" }],
         lg: ["1.125rem", { lineHeight: "1.5", letterSpacing: "-0.01em" }],
+        h2: ["2.125rem", { lineHeight: "1.5", letterSpacing: "-0.01em" }],
         xl: ["1.25rem", { lineHeight: "1.5", letterSpacing: "-0.01em" }],
         "2xl": ["1.5rem", { lineHeight: "1.33", letterSpacing: "-0.01em" }],
         "3xl": ["1.88rem", { lineHeight: "1.33", letterSpacing: "-0.01em" }],
@@ -36,7 +37,12 @@ module.exports = {
         "6xl": ["3.75rem", { lineHeight: "1.2", letterSpacing: "-0.02em" }],
       },
       screens: {
-        xs: "480px",
+        xs: "480px", // Custom breakpoint for extra-small screens
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
       },
     },
   },
