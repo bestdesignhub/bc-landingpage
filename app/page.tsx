@@ -8,6 +8,7 @@ import { getCountryList, getGenderList } from "@/utils/server-api";
 import Everyneed from "@/components/common/occasion";
 import AllsweaterImage from "@/components/common/all-sweater";
 import Profile from "@/components/common/Profile";
+import Directtocustomer from "@/components/common/dtoc";
 
 export const dynamic = "force-dynamic";
 
@@ -56,6 +57,7 @@ export default async function Home() {
       <div className="step-section">
         <AllsweaterImage />
         <Everyneed />
+        <Directtocustomer />
         <StepImage />
         <Profile />
       </div>
