@@ -5,7 +5,7 @@ export default function Stepbar() {
     <div>
        <img
         className="w-full"
-        src="/women-landing.png"
+        src="/product-details-slim.png"
         alt="Home Page"
       />
     </div>
