@@ -22,9 +22,6 @@ export default async function Home() {
           <div className="flex">
             <div className="full-width-div  gap-2">
               <ResponsiveImage />
-              <div className="contact-details">
-              <a href="mailto:contact@bespokecashmere.eu">contact@bespokecashmere.eu</a>/<a href="tel:+453132 7890">+45 3132 7890</a>
-              </div>
             </div>
           </div>
         </div>
